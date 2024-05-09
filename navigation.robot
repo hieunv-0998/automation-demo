@@ -1,5 +1,5 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library     SeleniumLibrary
 
 
 *** Keywords ***
@@ -8,4 +8,4 @@ Navigate To Add Invoice
 
 Open Invoice
     [Arguments]    ${id}
-    Click Link     xpath://a[contains(text(), '${id}')]
+    Click Link    xpath://a[contains(text(), '${id}')]

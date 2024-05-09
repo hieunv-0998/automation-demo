@@ -15,5 +15,5 @@ Exit Selenium
     Close Browser
 
 Generate Random Number
-    ${random_number}     Evaluate    random.randint(1000000, 9999999)    random
+    ${random_number}    Evaluate    random.randint(1000000, 9999999)    random
     RETURN    ${random_number}

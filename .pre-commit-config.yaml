@@ -1,11 +1,6 @@
+default_stages: ['pre-commit']
 repos:
-- repo: https://github.com/pycqa/isort
-  rev: 5.11.5
+- repo: https://github.com/MarketSquare/robotframework-tidy
+  rev: 4.11.0
   hooks:
-    - id: isort
-      name: isort (python)
-
--   repo: https://github.com/psf/black
-    rev: 22.3.0
-    hooks:
-    - id: black
+    - id: robotidy
