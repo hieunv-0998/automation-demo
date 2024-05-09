@@ -1,0 +1,14 @@
+services:
+    robot:
+        build: .
+        volumes:
+            - ./tests:/opt/robotframework/tests
+            - ./reports:/opt/robotframework/reports
+        entrypoint: ["tail", "-f", "/dev/null"]
+
+    nginx:
+        image: nginx:latest
+        ports:
+            - "${NGINX_PORT:-8181}:80"
+        volumes:
+            - ./reports:/usr/share/nginx/html
